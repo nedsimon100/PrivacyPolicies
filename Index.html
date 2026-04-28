@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ned Games — Privacy Policies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+        :root {
+            --bg: #fafaf8;
+            --surface: #ffffff;
+            --text: #1c1c1c;
+            --text-muted: #6b6b6b;
+            --accent: #2d5a27;
+            --accent-light: #e8f0e7;
+            --border: #e4e2dd;
+            --border-hover: #c4c2bd;
+            --radius: 10px;
+        }
+ 
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+ 
+        .page {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 6rem;
+        }
+ 
+        /* ── Header ── */
+        .header {
+            margin-bottom: 3rem;
+        }
+ 
+        .header__badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 0.3rem 0.7rem;
+            border-radius: 100px;
+            margin-bottom: 1.25rem;
+        }
+ 
+        .header__title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+        }
+ 
+        .header__subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 440px;
+        }
+ 
+        /* ── Divider ── */
+        .divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+ 
+        /* ── Game list ── */
+        .games-heading {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+ 
+        .games {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+ 
+        .game-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.25rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            color: var(--text);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+ 
+        .game-link:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+ 
+        .game-link__name {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+ 
+        .game-link__arrow {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+ 
+        .game-link:hover .game-link__arrow {
+            transform: translateX(3px);
+            color: var(--accent);
+        }
+ 
+        /* ── Footer ── */
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+ 
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+ 
+        .footer a:hover {
+            text-decoration: underline;
+        }
+ 
+        /* ── Responsive ── */
+        @media (max-width: 480px) {
+            .page { padding: 2.5rem 1rem 4rem; }
+            .header__title { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+ 
+    <header class="header">
+        <span class="header__badge">Privacy Policies</span>
+        <h1 class="header__title">Ned Games</h1>
+        <p class="header__subtitle">
+            Privacy policies for our apps published on Google Play.
+            Tap any game below to view its policy.
+        </p>
+    </header>
+ 
+    <hr class="divider">
+ 
+    <p class="games-heading">Our Games</p>
+ 
+    <!--
+    ============================================================
+    TO ADD A NEW GAME:
+    Copy and paste one of the <li> blocks below, then change
+    the href to match the game's folder name and update the
+    displayed name. That's it.
+ 
+    Example folder structure:
+      /index.html              ← this file
+      /block-blaster/index.html
+      /sky-drift/index.html
+    ============================================================
+    -->
+ 
+    <ul class="games">
+ 
+        <li>
+            <a class="game-link" href="./block-blaster/">
+                <span class="game-link__name">Pogo Climber</span>
+                <span class="game-link__arrow">→</span>
+            </a>
+        </li>
+ 
+        <li>
+            <a class="game-link" href="./sky-drift/">
+                <span class="game-link__name">Wander Worm</span>
+                <span class="game-link__arrow">→</span>
+            </a>
+        </li>
+ 
+        <!-- ADD MORE GAMES HERE -->
+ 
+    </ul>
+ 
+    <footer class="footer">
+        <span>© 2026 Ned Games</span>
+        <a href="mailto:Nedsimon100@gmail.com">Nedsimon100@gmail.com</a>
+    </footer>
+ 
+</div>
+</body>
+</html>
+<!--
+============================================================
+FIND-AND-REPLACE CHEAT SHEET
+============================================================
+  Ned Games    — Your name or studio
+  Nedsimon100@gmail.com     — Your contact email
+  2026      — e.g. "2026"
+ 
+  The two example games (Block Blaster, Sky Drift) are
+  placeholders — replace or remove them.
+ 
+  To add a game, copy an <li> block and change:
+    href="./folder-name/"   — folder containing that game's policy
+    game-link__name text    — display name of the game
+============================================================
+-->
